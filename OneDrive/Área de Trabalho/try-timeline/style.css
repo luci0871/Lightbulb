@@ -202,7 +202,7 @@ h1 {
 
 }
 
-.sparklepic:hover {
+.bulb1:hover {
     margin-top: 1px;
     transform: scale(0.50);
     transition-duration: 1.5s;

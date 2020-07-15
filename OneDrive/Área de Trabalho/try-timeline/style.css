@@ -201,3 +201,18 @@ h1 {
     text-align: left;
 
 }
+
+.sparklepic:hover {
+    margin-top: 1px;
+    transform: scale(0.50);
+    transition-duration: 1.5s;
+    fill: rgba(255, 153, 0, 0.877); 
+     }
+
+
+.lightpic:hover {
+    fill: rgba(255, 153, 0, 0.877);
+    transform: scale(1.50);
+    transition-duration: 1.5s;
+
+}

@@ -202,17 +202,75 @@ h1 {
 
 }
 
+.bulb1 {
+fill: rgba(255, 153, 0, 0.877);
+transform: scale(0.60);
+}
+
 .bulb1:hover {
     margin-top: 1px;
-    transform: scale(0.50);
+    transform: scale(0.85);
     transition-duration: 1.5s;
-    fill: rgba(255, 153, 0, 0.877); 
+    fill: rgb(255, 217, 0); 
      }
 
 
+.lightpic {
+   fill: rgba(255, 153, 0, 0.877);
+}
+
 .lightpic:hover {
-    fill: rgba(255, 153, 0, 0.877);
-    transform: scale(1.50);
+    fill: rgb(255, 217, 0);
+    transform: rotate(180deg);
     transition-duration: 1.5s;
 
 }
+
+.ideahead {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: headmove;
+}
+
+@keyframes headmove {
+    0%   {fill: rgba(255, 153, 0, 0.877); width: 50px;}
+    100% {fill:  rgb(255, 217, 0); width: 400px;}
+  }
+
+.bulb2 {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: bulb2move;
+    transform: scale(0.75);
+    transition-duration: 1.5s;
+    
+}
+
+
+
+@keyframes bulb2move {
+    0%   {fill: rgb(255, 217, 0);}
+    25%  {fill: rgba(255, 153, 0, 0.877);}
+    50%  {fill: orange;}
+    75%  {fill: orangered;}
+    100% {fill: rgb(255, 217, 0);}
+  }
+
+
+
+  .future-light .lightning {
+      fill: rgba(255, 153, 0, 0.877);
+      animation-name: lightningcolors;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+
+
+  }
+
+  @keyframes lightningcolors {
+    0%   {fill: rgb(255, 217, 0);}
+    25%  {fill: rgba(255, 153, 0, 0.877);}
+    50%  {fill: orange;}
+    75%  {fill: orangered;}
+    100% {fill: rgb(255, 217, 0);}
+  }
